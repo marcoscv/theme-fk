@@ -1,0 +1,265 @@
+
+/*** ESSENTIAL STYLES ***/
+.sf-contener {
+    bottom: 0;
+    clear: both;
+    position: absolute;
+    right: 0;
+}
+.sf-right {
+  margin-right: 14px;
+  float: right;
+  width: 7px;
+}
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.sf-menu {
+	height:40px;
+	float:right;
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	/*width:			10em;  left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+	width:			100%;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+/*	position:		relative; menu volador*/
+}
+.sf-menu a {
+	display:block;
+	position:relative;
+	color:#fff;
+	text-shadow:0 1px 0 #333;
+	text-transform:uppercase;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			40px; /* match top ul list item height */
+	z-index:		99;
+	width:auto;
+}
+.sf-menu li:nth-child(1) ul {left: 0px; background:url('../img/mac/ropa.png') -10px center no-repeat red
+		;transition: all 0.1s;	-moz-transition: all 0.1s;-webkit-transition: all 0.1s;-o-transition: all 0.1s;}
+		.sf-menu li:nth-child(1) ul:hover {background-position:0px center;transition: all 0.2s;	-moz-transition: all 0.2s;	-webkit-transition: all 0.2s;	-o-transition: all 0.2s;}
+.sf-menu li:nth-child(2) ul {left: 0px; background:url('../img/mac/figura.png') -10px center no-repeat red
+		;transition: all 0.1s;	-moz-transition: all 0.1s;-webkit-transition: all 0.1s;-o-transition: all 0.1s;}
+		.sf-menu li:nth-child(2) ul:hover {background-position:0px center;transition: all 0.2s;	-moz-transition: all 0.2s;	-webkit-transition: all 0.2s;	-o-transition: all 0.2s;}
+.sf-menu li:nth-child(3) ul {left: 0px; background:url('../img/mac/ropa.png') -10px center no-repeat red
+		;transition: all 0.1s;	-moz-transition: all 0.1s;-webkit-transition: all 0.1s;-o-transition: all 0.1s;}
+		.sf-menu li:nth-child(3) ul:hover {background-position:0px center;transition: all 0.2s;	-moz-transition: all 0.2s;	-webkit-transition: all 0.2s;	-o-transition: all 0.2s;}
+.sf-menu li:nth-child(4) ul {left: 0px; background:url('../img/mac/ropa.png') -10px center no-repeat red
+		;transition: all 0.1s;	-moz-transition: all 0.1s;-webkit-transition: all 0.1s;-o-transition: all 0.1s;}
+		.sf-menu li:nth-child(4) ul:hover {background-position:0px center;transition: all 0.2s;	-moz-transition: all 0.2s;	-webkit-transition: all 0.2s;	-o-transition: all 0.2s;}
+		
+/*.sf-menu li:nth-child(2) ul {left: 0px; background:url(http://cdn1.iconfinder.com/data/icons/free-retina-icon-set/40/Games.png) 2px center no-repeat red}
+.sf-menu li:nth-child(3) ul {left: 0px; background:url(http://cdn1.iconfinder.com/data/icons/free-retina-icon-set/40/Dog_head.png) 2px center no-repeat red}
+.sf-menu li:nth-child(4) ul {left: 0px; background:url(http://cdn1.iconfinder.com/data/icons/iconsweets2/40/talk_speak_chat.png) 2px center no-repeat red}
+*/
+
+
+
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			246px; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			246px; /* match ul width */
+	top:			0;
+}
+
+/*** DEMO SKIN ***/
+.sf-menu {
+
+}
+.sf-menu a {
+	display:block;
+	margin-right:2px;
+	padding: 3px 1.5em;
+	line-height:34px;
+	border: 0;
+	text-decoration:none;
+}
+.sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:#fff;
+	white-space:nowrap;
+}
+.sf-menu li li {
+	background: #E80000;
+}
+.sf-menu li li li {
+	background:	#DF0000;
+}
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+
+}
+.sf-menu ul li:hover, .sf-menu ul li.sfHover, .sf-menu ul li a:focus, .sf-menu ul li a:hover, .sf-menu ul li a:active, .sfHover {
+	background-color:	#900 !important;
+	outline:		0;
+}
+/*** arrows **/
+.sf-menu a.sf-with-ul {
+
+	min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
+}
+.sf-sub-indicator {
+	position:		absolute;
+	display:		block;
+	right:			10px;
+	top:			1.05em; /* IE6 only */
+	width:			10px;
+	height:			10px;
+	text-indent: 	-999em;
+	overflow:		hidden;
+	background:		url('../img/arrows-ffffff.png') no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+	top: 11px;
+	background-position: 0 -100px; /* use translucent arrow for modern browsers*/
+}
+/* apply hovers to modern browsers */
+a:focus > .sf-sub-indicator,
+a:hover > .sf-sub-indicator,
+a:active > .sf-sub-indicator,
+li:hover > a > .sf-sub-indicator,
+li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px -100px; /* arrow hovers for modern browsers*/
+}
+
+/* point right for anchors in subs */
+.sf-menu ul .sf-sub-indicator { background-position:  -10px 0; }
+.sf-menu ul a > .sf-sub-indicator { background-position:  0 0; }
+/* apply hovers to modern browsers */
+.sf-menu ul a:focus > .sf-sub-indicator,
+.sf-menu ul a:hover > .sf-sub-indicator,
+.sf-menu ul a:active > .sf-sub-indicator,
+.sf-menu ul li:hover > a > .sf-sub-indicator,
+.sf-menu ul li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px 0; /* arrow hovers for modern browsers*/
+}
+
+/*** shadows for all but IE6 ***/
+
+
+.sf-shadow ul li ul {
+    background-color: #900;
+    padding: 2px;
+    width: auto !important;
+}
+.sf-shadow ul li{
+	border:1px solid #F00;
+}
+.sf-shadow ul li a {
+	line-height:32px;
+	padding:3px 1em;
+}
+.sf-shadow ul li ul li a {
+	line-height:34px;
+	padding:3px 0.5em;
+}
+.sf-shadow ul.sf-shadow-off {
+	background-color: transparent;
+}
+li.sf-search {
+  background: inherit;
+  float: right;
+  line-height: 25px;
+}
+li.sf-search input {
+  -moz-border-radius: 0 5px 5px 0;
+  padding: 3px 0;
+  padding-left: 20px;
+  margin-top: 4px;
+  background: #fff url(../img/search.gif) no-repeat left center;
+}
+
+/* hack IE7 */
+.sf-menu a, .sf-menu a:visited {height:34px !IE;}
+.sf-menu li li {
+	width: 290px;
+	background-color:#C00 !IE;
+}
+
+.sf-menu li li a, .sf-menu li li a:hover {
+	padding-left: 40px;
+	background-image:url(../../../../img/mac/game.png);
+	background-repeat:no-repeat;
+	background-position:2px center;
+}
+
+/*.sf-menu li:nth-child(3) li a {
+	background-image:url(http://cdn1.iconfinder.com/data/icons/random_icons_by_Rskys/32/game.png);
+	background-repeat:no-repeat;
+	background-position:2px center;
+}*/
+
+/* MAC */
+
+.sf-menu {
+  background-position:0 0;
+  background-repeat:repeat no-repeat;
+  padding-bottom:0;
+  padding-left:5px;
+  padding-top:0;
+  width:754px;
+  background: transparent url(../../../../img/mac/friki_menu.png) repeat-x 0 0;
+}
+
+.sf-menu {
+	font-size:130%;
+	font-weight:bold;
+	float:right;
+}
+
+.sf-menu li li {
+	font-size: 100%;
+	font-weight:bold;
+}
+
+.sf-menu li li a {
+	font-size: 90%;
+}
+
+.sf-menu li a {
+	transition: all 0.2s;	-moz-transition: all 0.2s;	-webkit-transition: all 0.2s;	-o-transition: all 0.2s;
+}
+
+.sf-menu li a:hover {
+	background-image:none;
+	background-color:#900;
+	transition: all 0.2s;	-moz-transition: all 0.2s;	-webkit-transition: all 0.2s;	-o-transition: all 0.2s;
+}
+
+.sf-menu .social1, .sf-menu .social2, .sf-menu .social3 {
+	float:right;
+	padding:0px;
+	margin:0px;
+}
+.sf-menu .social1 a, .sf-menu .social2 a, .sf-menu .social3 a {
+    display: block;
+    float: right;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    width: 36px;
+}

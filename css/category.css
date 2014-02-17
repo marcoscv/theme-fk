@@ -1,0 +1,79 @@
+h1{
+	color: red;
+    float: left;
+    margin: 10px 0;
+    text-transform: uppercase;
+    width: 100%;
+	text-shadow:black 1px 1px 1px;
+}
+.resumecat {
+    background: none repeat scroll 0 0 #F0F0F0;
+    color: #000000;
+	position:absolute;
+	right:0;
+}
+
+/*.content_scene_cat {
+	padding:5px;
+	border:1px solid #ccc;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 1px 1px #e2e2e2;
+	-webkit-box-shadow: 0 1px 1px #e2e2e2;
+	box-shadow: 0 1px 1px #e2e2e2;
+}*/
+.content_scene_cat img {
+	float:left;
+	margin:0 5px 5px 5px;
+	border:1px solid #CCCCCC;
+}
+.cat_desc {
+	font-size:12px;
+	line-height:18px;
+	clear:both;
+	display:inline;
+}
+.cat_desc p {padding:0 10px 5px 10px}
+.cat_desc .lnk_more {
+   padding:0 10px;
+   color:#0088CC;
+	background:url(../img/arrow_right_1.png) no-repeat 100% 4px transparent;
+}
+
+
+/* ************************************************************************************************
+      SUB CATEGORIES
+************************************************************************************************ */
+#subcategories {margin-top:15px; clear:both}
+#subcategories h3 {
+	padding:5px 12px;
+	font-size:13px;
+	color:#fff;
+	text-transform:uppercase;
+	text-shadow:0 1px 0 #666;
+	background:url(../img/bg_table_th.png) repeat-x 0 0 #999
+}
+
+.inline_list {
+	list-style-type:none;
+	margin-top:10px;
+}
+.inline_list  li {
+	padding:10px 0;
+	border-bottom:1px dotted #ccc;
+	width:236px;
+	float:left;
+	margin:4px;
+}
+.inline_list  li .img {
+	float:left;
+	margin-right:15px
+}
+.inline_list  li img {
+	border:1px solid #ccc
+}
+.inline_list  li .cat_name {
+	font-weight:bold;
+	font-size:13px
+}

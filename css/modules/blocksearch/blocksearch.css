@@ -1,0 +1,31 @@
+/* block top search */
+#search_block_top {
+	position:absolute;
+	top:24px;
+	left:0;
+}
+#search_block_top p {padding:0;}
+#search_block_top #search_query_top {
+	padding:0 5px 0 35px;
+	height:33px;
+	width:223px;
+	color:#666;
+	background-image:url(../../../img/mac/friki_buscador.jpg);
+	float: left;
+	border:0px;
+	font-size:130%;
+	text-transform:uppercase;
+}
+
+#search_block_top .button {
+	border:none;
+	border-radius:0;
+	color:#fff;
+	text-transform:uppercase;
+	background:url(../../../img/mac/friki_botonbuscar.png) repeat-x 0 0 #101010;
+	float: left;
+	height: 33px;
+	width:81px;
+	font-size:120%;
+}
+
